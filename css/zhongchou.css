@@ -1,0 +1,755 @@
+/************  网页顶部   start *********/
+/************  网页顶部   end   *********/
+
+
+/************  网页众筹主体   start *********/
+/*头部-----开始*/
+.header {
+    margin-top: 49px;
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+}
+/*导航*/
+.header .navigation {
+    position: absolute;
+    display:inline-block;
+    width: 437px;
+    height: 80px;
+    line-height: 80px;
+}
+.header .navigation li {
+    float: left;
+}
+.header .navigation li+li {
+    margin-left: 70px;
+}
+.header .navigation li a {
+    font: 16px microsoft yahei;
+}
+.header .navigation .lifirst a {
+    color: #fd6f6e;
+}
+.header .navigation li a:hover {
+    color: #fd6f6e;
+}
+/*搜索*/
+.header .search {
+    width: 325px;
+    height: 34px;
+    border:1px solid #e4e4e4;
+    position: absolute;
+    top: 20px;
+    left: 650px;
+    border-radius:17px;
+}
+.header .search .content {
+    width: 265px;
+    height:34px;
+    margin-left: 20px;
+}
+.header .search img {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+/*任务*/
+.header .renwu {
+    position: absolute;
+    right: 200px;
+}
+.header .renwu a:hover {
+    color: #fd6f6e;
+}
+.header .renwu  a .toption {
+    width: 24px;
+    height: 18px;
+    background:url("../images/zhongchou/jinglingtu1.png");
+    background-position: -116px -3px;
+    display: inline-block;
+    left: 200px;
+    margin: 30px 0px -4px 0;
+}
+.header .renwu a span {
+    font-size: 14px;
+}
+.header .renwu .num {
+    position: absolute;
+    top: 24px;
+    left: 52px;
+    height: 14px;
+    line-height: 13px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    min-width: 14px;
+    background: #fd6f6e;
+    border-radius: 10px;
+    font-weight: normal;
+    padding-left: 1px;
+}
+
+/*个人中心*/
+.header .grzx .toption {
+    width: 19px;
+    height: 19px;
+    background:url("../images/zhongchou/jinglingtu1.png");
+    background-position: -28px -1px;
+    float: left;
+    margin: 29px 4px 0 0;
+}
+.header .grzx a:hover {
+    color: #fd6f6e;
+}
+.header .grzx a span {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+}
+/*头部-----结束*/
+
+
+.main {
+    background-color: #F5F5F5;
+}
+
+/*轮播-----------------开始*/
+/*轮播图*/
+.lunbo {
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 400px;
+}
+.lunboimg {
+    height: 400px;
+    width: 700%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+li {
+    float: left;
+}
+/*轮播按钮圆点*/
+.points {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -85px;
+}
+.points i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    float: left;
+    font-style: normal;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.points i:last-child {
+    margin-right: 0;
+}
+.points i.current {
+    background-color: skyblue;
+    color: #fff;
+}
+
+/*轮播左右按钮*/
+.arrow {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -30px;
+}
+.arrow-left,.arrow-right{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    font: 20px/60px "consolas";
+    color: #fff;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    cursor: pointer;
+}
+.arrow-right {
+    right: -10px;
+}
+/*轮播-----------------结束*/
+
+
+/*音乐众筹*/
+/*左侧 音乐众筹*/
+/*众筹导航*/
+.crowd-nav {
+    position: relative;
+}
+.crowd-nav-left{
+    width: 880px;
+}
+.crowd-nav-left-title {
+    height: 38px;
+    padding: 18px 0 14px 0;
+}
+.crowd-nav-left-title span {
+    display: inline-block;
+    width: 118px;
+    height: 38px;
+    margin-right: 70px;
+    background:url("../images/zhongchou/jinglingtu2.png") no-repeat 0 -117px;
+}
+.crowd-nav-left-title .zhongchou {
+    margin-left: 40px;
+}
+.crowd-nav-left-title ul li a {
+    display: inline-block;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 12px;
+}
+.crowd-nav-left-title ul li a:hover {
+    color: #fd6f6e;
+    text-decoration: underline;
+}
+/*众筹内容*/
+.zhongchou-content .tuijian {
+    width: 270px;
+    height: 300px;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 23px;
+    margin-bottom: 23px;
+}
+.zhongchou-content .tuijian:hover {
+    box-shadow: 5px 5px 10px #999;
+}
+.zhongchou-content a {
+    font: 14px morosoft yehei;
+}
+.zhongchou-content a:hover {
+    color: #fd6f6e;
+}
+.zhongchou-content .tuijian h4 {
+    width: 270px;
+    height: 45px;
+    background-color: #fff;
+}
+.zhongchou-content .tuijian h4 .ba {
+    line-height: 45px;
+    margin-left: 10px;
+}
+.zhongchou-content .tuijian h4 .tian {
+    display: block;
+    width: 58px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 4px;
+    font-size: 12px;
+    color:#fff;
+    background-color: #68efad;
+}
+.zhongchou-content .tuijian img {
+    display: inline;
+    width: 270px;
+    height: 185px;
+}
+
+.zhongchou-content .tuijian .explain {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.zhongchou-content .tuijian .dcl {
+    height: 50px;
+    line-height: 50;
+    
+}
+
+.zhongchou-content .tuijian .dacheng {
+    height: 30px;
+    line-height: 30px;
+    color: #a6a6a6;
+    margin-left: 10px;
+}
+.zhongchou-content .tuijian .dacheng i {
+    color: #fc6e6e;
+}
+.zhongchou-content .tuijian .dachengliang {
+    width: 242px;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #eaeaea;
+}
+.zhongchou-content .tuijian .dachengliang p {
+    height: 8px;
+    width: 69%;
+    border-radius: 4px;
+    background-color: #fc6e6e;
+}
+/*右侧 粉丝爱看*/
+.crowd-nav-right-content {
+    width: 310px;
+    height: 946px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 23px;
+
+}
+.crowd-nav-right-title {
+    height: 38px;
+    margin: 18px 0 14px 0;
+}
+.crowd-nav-right-title span{
+    display: inline-block;
+    width: 80px;
+    height: 38px;
+    background:url("../images/zhongchou/jinglingtu2.png") no-repeat -590px -234px;
+}
+.crowd-nav-right-content .zixun {
+    height: 40px;
+    line-height: 40px;
+    color: #272727;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*导图*/
+.crowd-nav-right-content .daotu {
+    height: 111px;
+    width: 280px;
+    margin: 0px 5px;
+    position: relative;
+}
+.crowd-nav-right-content .daotu span {
+    position: absolute;
+    width: 284px;
+    height: 32px;
+    line-height: 32px;
+    bottom: 0;
+    display: block;
+    background: url("../images/zhongchou/index_play_bg.png") repeat-x;
+    padding: 80px 10px 0 10px;
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.zixun1,.zixun2 {
+    width: 310px;
+    height: 443px;
+}
+.crowd-nav-right-content .zixun1 {
+    height: 443px;
+}
+.crowd-nav-right-content .zixun2 {
+    display: none;
+}
+.crowd-nav-right-content li a {
+    display: inline-block;
+    width: 295px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    margin-left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.crowd-nav-right-content li a:hover {
+    color: #fd6f6e;
+}
+
+/*资讯内容切换 按钮 */
+.crowd-nav-right-content .zxpoints {
+    width: 310px;
+    height: 14px;
+    line-height: 14px;
+    margin: 15px auto 0;
+    position: relative;
+}
+.crowd-nav-right-content .zxpoints .zxpoint1 {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #999;
+    position: absolute;
+    margin: 4px -160px;
+}
+.crowd-nav-right-content .zxpoints .zxpoint2 {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #999;
+    position: absolute;
+    margin: 4px -140px;
+}
+
+/*榜单*/
+.crowd-nav-right-content .bangdan {
+    height: 40px;
+    line-height: 40px;
+    color: #272727;
+    font-size: 14px;
+    font-weight: bold;
+}
+.crowd-nav-right-content .bangdan-title {
+    width: 184px;
+    height: 26px;
+    border: 1px solid #f5f5f5;
+    background-color: #ccc;
+    line-height: 26px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+.crowd-nav-right-content .bangdan-title a:hover {
+    color: #fd6f6e;
+}
+.crowd-nav-right-content .bangdan-title a {;
+    display: inline-block;
+    width: 92px;
+    height: 26px;
+    line-height: 26px;
+    color: #fd6f6e;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+/*榜单内容*/
+.crowd-nav-right-content .bangdan2 {
+    display: none;
+}
+.crowd-nav-right-content .bangdan-content {
+    height: 270px;
+    width: 311px;
+}
+.crowd-nav-right-content .bangdan-content dl {
+    width: 300px;
+    padding: 6px 0;
+    position: relative;
+}
+.crowd-nav-right-content .bangdan-content dl i {
+    display: inline-block;
+    height: 35px;
+    width: 20px;
+    margin-left: 10px;
+    background: url("../images/zhongchou/jinglingtu2.png") no-repeat -800px -58px;
+}
+.crowd-nav-right-content .bangdan-content dl img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 40px;
+}
+.crowd-nav-right-content .bangdan-content dl .bd1Name {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0px 8px -70px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.crowd-nav-right-content .bangdan-content dl .bd-dd {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    padding: 12px 20px 12px 0;
+    font-size: 16px;
+    color: #fd6f6e;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.crowd-nav-right-content .bangdan-content .num2 i {
+    background: url("../images/zhongchou/jinglingtu2.png") no-repeat -800px -102px;
+}
+.crowd-nav-right-content .bangdan-content .num3 i {
+    background: url("../images/zhongchou/jinglingtu2.png") no-repeat -800px -148px;
+}
+.crowd-nav-right-content .bangdan-content .num4 i {
+    background: url("../images/zhongchou/jinglingtu2.png") no-repeat -800px -198px;
+}
+.crowd-nav-right-content .bangdan-content .num5 i {
+    background: url("../images/zhongchou/jinglingtu2.png") no-repeat -800px -240px;
+}
+
+/*告白季*/
+.gaobaiji .gaobaiji-title span {
+    display: inline-block;
+    height: 38px;
+    width: 143px;
+    background: url("../images/zhongchou/jinglingtu2.png") no-repeat -326px -234px;
+}
+
+/*告白季内容*/
+.gaobaiji-content ul {
+    margin-left: -28px;
+}
+.gaobaiji-content ul li {
+    width: 280px;
+    height: 230px;
+    background: #fff;
+    margin: 27px 0 0 27px;
+    box-shadow: 1px 1px 1px -1px #dadada;
+    float: left;
+}
+.gaobaiji-content ul li:hover {
+    box-shadow: 5px 5px 10px #999
+}
+.gaobaiji-content ul li dt a {
+    display: block;
+    width: 100%;
+    height: 154px;
+    position: relative;
+    overflow: hidden;
+}
+.gaobaiji-content ul li dt a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+.gaobaiji-content ul li dd {
+    margin-left: 8px;
+}
+.gaobaiji-content ul li dd a {
+    display: block;
+    width: 262px;
+    line-height: 14px;
+    font-size: 14px;
+    margin: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.gaobaiji-content ul li dd img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.gaobaiji-content ul li dd span {
+    line-height: 30px;
+    float: left;
+    font-family: simsun;
+    padding-left: 8px;
+    color: #666666;
+}
+
+.gaobaiji-content .mv-buttom {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    z-index: 3;
+    display: inline-block;
+    height: 20px;
+    color: #cccccc;
+    font-size: 12px;
+    font-family: simsun;
+}
+
+.gaobaiji-content .mv-buttom .mv-col {
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+    padding-left: 26px;
+    background: url(../images/zhongchou/pcbf.png) no-repeat;
+    line-height: 20px;
+}
+.gaobaiji-content .mv-buttom .mv-massage {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    padding-left: 26px;
+    background: url(../images/zhongchou/pcxx.png) no-repeat;
+    line-height: 20px;
+}
+.gaobaiji-content .mv-play-icon {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    margin-left: -33px;
+    margin-top: -30px;
+    height: 65px;
+    width: 65px;
+    background:url("../images/zhongchou/jinglingtu2.png") no-repeat -504px -208px;
+}
+
+
+
+/*最新入驻*/
+/*入驻title*/
+
+.ruzhu-title span {
+    display: inline-block;
+    width: 86px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 14px;
+    background:url("../images/zhongchou/jinglingtu2.png") no-repeat -2px -3px;
+}
+.ruzhu ul {
+width: 1230px;
+margin-left: -28px;
+}
+.ruzhu ul li {
+    width: 218px;
+    height: 240px;
+    background: #fff;
+    float: left;
+    margin-left: 27px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    box-shadow: 1px 1px 1px 0 #E8E8E8;
+}
+.ruzhu ul li:hover {
+    box-shadow: 5px 5px 10px #999
+}
+.ruzhu ul li img {
+    margin: 20px 49px 0;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ruzhu ul li .beizhu {
+    display: block;
+    width: 148px;
+    line-height: 46px;
+    border-bottom: dashed 1px #e6e6e6;
+    color: #666;
+    font-size: 16px;
+    padding: 0 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.ruzhu ul li .beizhu:hover {
+    color: #fc6e6e;
+}
+.ruzhu ul li span {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    background:url("../images/zhongchou/jinglingtu2.png") no-repeat -558px 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/************  网页众筹主体   end   *********/
+
+
+/************  网页底部   start *********/
+.bottom{
+    min-width: 1200px;
+    height: 226px;
+    background: #181818;
+    text-align: center;
+}
+.bottom p{
+    padding-top: 87px;
+    width: 946px;
+    margin: 0 auto;
+    padding-bottom: 23px;
+}
+.bottom .copyright{
+    text-align: center;
+    width: 926px;
+    margin: 0 auto;
+    color: #757575;
+    font: 12px/2 Tahoma,\\5FAE\8F6F\96C5\9ED1,Microsoft Yahei,hiragino sans gb,Helvetica,Arial,\\5B8B\4F53,"sans-serif";
+    position: relative;
+    padding-right: 20px;
+}
+.bottom p a{
+    color: #a3a3a3;
+    font-size: 13px;
+    display: inline-block;
+    padding: 0 13px;
+    border-right: 1px dashed #a3a3a3;
+}
+.copyright .wen {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.bottom .ghs{
+    left: -24px;
+    top: 7px;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    background:url("../images/mv/下载.gif");
+}
+.bottom .biaoshi img {
+    position: absolute;
+    vertical-align: top;
+    margin-top: -25px;
+}
+/************  网页底部   end   *********/
+
+/******************网页返回顶部**************/
+
+.return_top_wrapper {
+    height: 65px;
+    position: fixed;
+    /*top: 191px;*/
+    /*bottom: 100px;*/
+    right: 0;
+    z-index: 298;
+    overflow: hidden;
+    display: none;
+}
+.return_top_wrapper div {
+    height: 65px;
+    width: 50px;
+}
+.return_top_wrapper a {
+    position: absolute;
+    height: 65px;
+    width: 50px;
+    top: 0;
+}
+.return_top_wrapper a.return_top_static {
+    background: url(../images/index/returntop.png) no-repeat;
+    left: 0;
+}
+.return_top_wrapper a.return_top_running {
+    background: url(../images/index/returntop.png) no-repeat;
+    position: absolute;
+    left: -50px;
+}

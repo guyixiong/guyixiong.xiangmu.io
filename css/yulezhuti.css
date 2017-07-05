@@ -1,0 +1,255 @@
+.head{
+    width: 1190px;
+    height: 90px;
+    margin:0 auto;
+    line-height: 90px;
+    margin-top: 50px;
+}
+#logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.h-li{
+    margin-left: 50px;
+}
+.w {
+    /*版心 提取 */
+    width: 1200px;
+    margin: 0 auto;
+}
+/*主体左侧样式*/
+.new-mainl{
+    width: 840px;
+    padding-top: 30px;
+
+}
+#box {
+    width: 840px;
+    height: 400px;
+    margin: 15px auto;
+    overflow: hidden;
+
+}
+li,img{
+    cursor:pointer;
+}
+#box li {
+    width: 168px;
+    height: 400px;
+    float: left;
+}
+
+#box ul {
+    width: 1500px;
+}
+.toutiao,.taige{
+    height: 49px;
+    padding-top: 30px;
+    line-height: 49px;
+    border-bottom:1px solid #666;
+}
+.yqwd{
+    padding-top: 30px;
+}
+#wd{
+    padding-bottom: 30px;
+    cursor:pointer;
+}
+#wd li{
+    width: 482px;
+    height: 41px;
+}
+#wd li span{
+    height: 41px;
+    line-height: 41px;
+    font-size: 20px;
+    font-family: "SimSun", "宋体";
+    overflow: hidden;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: inline-block;
+    padding-left: 10px;
+}
+#imgs{
+    width: 840px;
+    height: 100px;
+}
+/*主体右侧样式*/
+.new-mainr{
+    width: 330px;
+    padding-top: 30px;
+}
+#yuantu{
+    width: 320px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+#new-mainr-one li{
+    width: 310px;
+    height: 40px;
+    font-size:14px;
+    line-height: 40px;
+    border-radius: 20%;
+    padding:0 10px;
+}
+.taige-one{
+    padding-top: 30px;
+}
+.taige-one .p1{
+    padding-bottom: 80px;
+}
+.taige-one a{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #000;
+    background-color: #666666;
+    display: block;
+}
+.inner{
+    width: 330px;
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+.item {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/***********明星圈***********/
+.mxq,.mxq1{
+    width: 696px;
+    height: 78px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url("../images/yule/mingx 2.png") no-repeat center center;
+    padding-left: 504px;
+    padding-top: 10px;
+}
+.mxq1{
+    padding-left: 504px;
+}
+#minxin,#minxin1{
+    position: relative;
+    top:0;
+    left: 0;
+}
+.mxqt-one,.mxqt-two,.mxqt-three{
+    margin-right: 15px;
+}
+.imgup{
+    margin-bottom: 15px;
+}
+.img{
+    margin-bottom: 15px;
+}
+.mxqt-one{
+    width: 280px;
+}
+.mxqt-two{
+    width: 256px;
+}
+.mxqt-three{
+    width: 363px;
+}
+.mxqt-four{
+    width: 256px;
+}
+.mxqt{
+    margin-bottom: 50px ;
+}
+.wsgs{
+    margin-bottom: 50px; ;
+}
+.wsgs ul+ul{
+    margin-top: 20px;
+}
+.wsgsul li~li{
+    margin-left: 10px;
+}
+.wsgsul li{
+    position: relative;
+}
+.wsgsul li p{
+    width: 232px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(250,250,250,0.3);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: none;
+}
+.vbo{
+    position: absolute;
+    display: none;
+    width: 80px;
+    height: 80px;
+    background: url(../images/yule/vbo.png) no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    z-index:5;
+
+}
+/**/
+/******************网页底部开始**************/
+.footer {
+    margin: 30px auto 0;
+    min-width: 1000px;
+    height: 150px;
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+    background-color: #fff;
+}
+.footer_link {
+    font-size: 14px;
+    padding: 35px 0 20px;
+    color: #666;
+}
+.footer_link a {
+    color: #666;
+}
+.ico_line {
+    width: 2px;
+    height: 10px;
+    margin: 0 8px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../images/index/ico_index.png) no-repeat -70px 0;
+}
+.footer_copy a {
+    color: #999;
+}
+.footer_copy .culture img {
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+.footer_copy .police-store img {
+    vertical-align: top;
+}
+.footer_copy .positionImg img {
+    vertical-align: top;
+    margin-top: -25px;
+}
+.footer a:hover {
+    color: #690;
+    text-decoration: none;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/******************网页底部结束**************/

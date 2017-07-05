@@ -1,0 +1,176 @@
+/*css 初始化 */
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;  /*清除元素的内外边距*/
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*外面环绕线*/
+}
+
+ul, ol {
+    list-style: none;/*去掉原样式中的小黑点*/
+}
+
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "microsoft yahei","SimSun", "宋体" ;  /*字体的自动识别*/
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+textarea {
+    resize: none;  /*不可以随意拖动*/
+}
+
+
+img {
+    border: 0;
+    vertical-align: middle; /*  去掉图片底部默认的3像素空白缝隙*/
+}
+
+table {
+    border-collapse: collapse; /*合并外连线*/
+}
+
+body {
+    background: #f3f5f7;
+    font: 12px/1.5 Tahoma,'\5FAE\8F6F\96C5\9ED1','Microsoft Yahei',"hiragino sans gb", Helvetica, Arial, "\5b8b\4f53", 'sans-serif';
+    color: #333;
+}
+
+.clearfix:before, .clearfix:after {
+    /*清除浮动，最好最标准的写法*/
+    content: "";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/  /*兼容IE6下的写法*/
+}
+
+a {
+    color: #666;   /*a 标签是不继承颜色 的*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {  /*一般是起装饰作用*/
+    font-style: normal;  /*去掉原有的样式*/
+    text-decoration: none;  /*去掉下划线或是删除线*/
+}
+
+.col-red {
+    color: #C81623 !important;/*京东主色调*/
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*初始化完成*/
+
+@font-face {font-family: "iconfont";
+    src: url('../font/iconfont.eot?t=1495193154448'); /* IE9*/
+    src: url('../font/iconfont.eot?t=1495193154448#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff?t=1495193154448') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf?t=1495193154448') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg?t=1495193154448#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gouwuche:before { content: "\f0082"; }
+
+.icon-gouwuche1:before { content: "\e60a"; }
+
+.icon-gouwuche2:before { content: "\e75b"; }
+
+.icon-wodedingdan:before { content: "\e616"; }
+
+.icon-denglu:before { content: "\e610"; }
+
+.icon-denglu1:before { content: "\e623"; }
+
+.icon-fanhui:before { content: "\f0343"; }
+
+.icon-gengduo:before { content: "\f0344"; }
+
+.icon-shangjiantou:before { content: "\f034d"; }
+
+.icon-xiajiantou:before { content: "\f034e"; }
+
+.icon-youjiantou:before { content: "\f034f"; }
+
+.icon-zuojiantou:before { content: "\f0350"; }
+
+/*版心设置*/
+.bx{
+    width: 1200px;
+    margin: 0 auto;
+}

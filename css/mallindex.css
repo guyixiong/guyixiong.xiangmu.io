@@ -1,0 +1,427 @@
+/************************************音悦台商城首页*****************************************/
+/************************商城顶部*********************/
+.newhead {
+    width: 100%;
+    height: 30px;
+    background-color: #1c1d1e;
+}
+.yinyuelogo {
+    float: left;
+    background: url(../images/shopmall/yinLogo.png);
+    height: 30px;
+    width: 57px;
+    margin-left: 15px;
+}
+.newtitle {
+    float: right;
+    font-size: 12px;
+    color: #9B9B9C;
+    line-height: 30px;
+}
+.newtitle li {
+    width: 135px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.popsina img {
+    width: 135px;
+}
+.popsina {
+    display: none;
+}
+.popwechat {
+    display: none;
+}
+
+
+/************************************商城头部**********************************/
+.barbox {
+    background-color: #1f2122;
+}
+.shop-bar {
+    position: relative;
+    height: 130px;
+}
+.shop-logo {
+    float: left;
+    margin-top: 28px;
+    margin-left: 65px;
+    width: 73px;
+    height: 77px;
+    background: url(../images/shopmall/shop-logo.png) no-repeat;
+}
+.shop-search {
+    position: absolute;
+    width: 451px;
+    height: 40px;
+    /*background-color: #cccccc;*/
+    background: url(../images/shopmall/search_icon.png) no-repeat -1px -44px;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -225px;
+}
+.shop-search input {
+    position: absolute;
+    width: 415px;
+    height: 17px;
+    line-height: 17px;
+    left: 23px;
+    top: 11px;
+    background: none;
+}
+.shop-search a {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 39px;
+    right: 15px;
+    background: url(../images/shopmall/search_icon.png) no-repeat -461px 0;
+}
+.input-active {
+    background: url(../images/shopmall/search_icon.png) no-repeat -1px -1px;
+}
+.input-active a {
+    background: url(../images/shopmall/search_icon.png) no-repeat -461px -43px;
+}
+.userbox {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+}
+.userbox a {
+    margin-left: 15px;
+    color: #e2e2e2;
+}
+.userbox i{
+    font-size: 25px;
+}
+.userbox span {
+    margin-left: 5px;
+    font: 12px "Microsoft Yahei";
+}
+.userbox span:hover {
+    color: #f52a6e;
+}
+
+/*********************************主轮播图广告模块*******************************/
+.sliderbox {
+    position: relative;
+    width: 1200px;
+    height: 389px;
+    overflow: hidden;
+}
+
+.sliderinner {
+    position: absolute;
+    width: 2400px;
+    /*width: 1200px;*/
+    height: 389px;
+    background-color: #898989;
+    /*width: 700%;*/
+    left: 0;
+}
+.sliderbox li img {
+    width: 1200px;
+    height: 389px;
+}
+.sliderbox li {
+    float: left;
+}
+
+
+/*轮播图导航器*/
+.slidernav {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+    padding: 0 5px;
+}
+.slidernav i {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slidernav i+i{
+    margin-left: 12px;
+}
+.slidernav i.current {
+    background-color: #C81623;
+}
+
+/*轮播图左右切换按钮*/
+.controlbox span {
+    position: absolute;
+    /*display: block;*/
+    display: none;
+    width: 60px;
+    height: 72px;
+    background-color: rgba(0,0,0,0.6);
+    font: 50px/72px "microsoft yahei";
+    color: #ccc;
+    text-align: center;
+    top: 50%;
+    margin-top: -36px;
+    cursor: pointer;
+}
+.controlbox .ctl-next {
+    border-radius: 0 10px 10px 0;
+    padding-left: 12px;
+}
+.controlbox .ctl-prev {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    padding-right: 12px;
+}
+
+
+/************************************追星模块*********************************/
+.scenebox .zhuixing {
+    background: url(../images/shopmall/scene-title.png) no-repeat;
+    height: 50px;
+    margin: 18px 0 10px;
+}
+.slick-track {
+    float: left;
+}
+.slick-track ul {
+    width: 872px;
+    height: 132px;
+    overflow: hidden;
+}
+.slick-track li {
+    float: left;
+    width: 218px;
+}
+.slick-track li img {
+    width: 200px;
+    height: 100px;
+}
+.slick-track li p {
+    font-size: 14px;
+    color: #474a4b;
+    line-height: 32px;
+    width: 200px;
+    text-align: center;
+    background-color: #9B9B9C;
+}
+.slicknav {
+    width: 100%;
+    text-align: center;
+}
+.slicknav i {
+    display: inline-block;
+    width: 15px;
+    height: 6px;
+    margin: 0 5px;
+    border-radius:3px;
+    cursor: pointer;
+    background-color: #ff437e;
+}
+.signgoods {
+    float: right;
+}
+.signgoods img {
+    width: 300px;
+    height: 132px;
+}
+
+/**************************TOP榜模块**********************/
+.toptitle {
+    background: url(../images/shopmall/top_title.png) no-repeat 0 -50px;
+    text-align: center;
+    height: 50px;
+    margin: 18px 0 10px;
+}
+.title {
+    width: 63px;
+    height: 19px;
+    line-height: 19px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.active-title {
+    background-color: #F90101;
+    color: #fff;
+    border-radius: 10px;
+}
+.artists-chart {
+    /*overflow: hidden;*/
+}
+.goods-chart {
+    display: none;
+}
+.topbox li {
+    position: relative;
+    float: left;
+}
+.topbox li:hover {
+    box-shadow: 3px 3px 10px #ccc;
+}
+.topbox li+li {
+    margin-left: 16px;
+}
+.topbox li img {
+    width: 136px;
+    height: 136px;
+}
+.artists-chart li h4 {
+    width: 136px;
+    height: 45px;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #333739;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 600;
+    line-height: 45px;
+}
+.artists-chart li span {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    height: 57px;
+    width: 55px;
+    line-height: 35px;
+    font-weight: bold;
+    background: url(../images/shopmall/active-title01.png) no-repeat;
+    text-align: left;
+    text-indent: 11px;
+}
+.goods-chart h4 {
+    width: 126px;
+    height: 45px;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #333739;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.goods-chart li span {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    top: -1px;
+    left: -1px;
+    color: #fff;
+    background-color: #f52a6e;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+/*************************新品首发*********************************/
+.newbox h3 {
+    background: url(../images/shopmall/top_title.png) no-repeat 0 -100px;
+    height: 50px;
+    margin: 18px 0 10px;
+}
+.goodslist li {
+    float: left;
+    width: 390px;
+    height: 190px;
+    margin: 0 5px 10px 5px;
+    background-color: #fafafa;;
+}
+.goodslist li:hover {
+    box-shadow: 3px 3px 10px #ccc;
+}
+.goodslist li a {
+    color: #000;
+    display: block;
+}
+.goodspic {
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.goodspic img {
+    width: 100%;
+    height: 100%;
+}
+.goodsinfo {
+    float: right;
+    width: 160px;
+    height: 155px;
+    padding: 35px 20px 0;
+}
+.goodsinfo .goods-name {
+    font-size: 14px;
+    color: #494c4d;
+    height: 45px;
+}
+.goodsinfo .goods-price {
+    color: #ff437e;
+    font-size: 14px;
+    margin: 10px 0 10px;
+}
+
+
+/******************************固定导航栏模块***************************/
+.fixmenu {
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+    width: 62px;
+    height: 240px;
+}
+.fixmenu a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background: #C81623;
+}
+.fixmenu-cart a {
+    position: relative;
+    background: url(../images/shopmall/fixmenu.png) no-repeat -3px -3px;
+}
+.fixmenu-cart a i {
+    position: absolute;
+    top: -5px;
+    left: 19px;
+    width: 22px;
+    height: 23px;
+    background: url(../images/shopmall/fixmenu-cart.png) no-repeat -25px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
+}
+.fixmenu-service a {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -3px -64px;
+}
+.fixmenu-notice a {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -3px -125px;
+}
+.fixmenu-top a {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -3px -186px;
+}
+
+.fixmenu-cart a:hover {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -75px -3px;
+}
+.fixmenu-cart a:hover i {
+    background: url(../images/shopmall/fixmenu-cart.png) no-repeat 0 0;
+    color: #ff437e;
+}
+.fixmenu-service a:hover {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -75px -64px;
+}
+.fixmenu-notice a:hover {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -75px -125px;
+}
+.fixmenu-top a:hover {
+    background: url(../images/shopmall/fixmenu.png) no-repeat -75px -186px;
+}

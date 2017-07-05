@@ -1,0 +1,256 @@
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 299;
+    background: #000;
+    font-size: 12px;
+    min-width: 1020px;
+}
+.top .content {
+    max-width: 1560px;
+    min-width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 299;
+}
+.top .content .logo a {
+    display: block;
+    width: 242px;
+    height: 49px;
+    margin: 0px 0px 0px -51px;
+    text-indent: -999em;
+    background: url(../images/index/logo.png) no-repeat;
+}
+.top .content>ul>li {
+    position: relative;
+    float: left;
+    margin: 0px 6px;
+}
+.top .content>ul .self {
+    color: #cf9;
+}
+.top .content>ul>li>a {
+    display: block;
+    padding: 0 12px 0 13px;
+    line-height: 50px;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+.top .content>ul>li>a:hover {
+    color: #cf9;
+    background-color: #222;
+}
+
+.top .content b {
+    width: 7px;
+    height: 4px;
+    cursor: pointer;
+    margin: 23px 0 0 3px;
+    font-size: 0;
+    background: url('../images/index/topbar_sprite2.png') no-repeat -223px -18px;
+    /*position: relative;*/
+}
+.top .content .mv:hover b {
+    background-position: -231px -18px;
+}
+.top .content .dropdownmenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 80px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: #222;
+    z-index: 299;
+}
+.top .content .dropdownmenu a {
+    display: block;
+    width: 71px;
+    height: 36px;
+    line-height: 36px;
+    color: #ccc;
+    padding-left: 9px;
+    font-size: 14px;
+}
+
+.top .shopgif {
+    background: url('../images/index/shop2.gif') no-repeat;
+}
+.top .shopgif:hover {
+    background: url('../images/index/shop2_hover.gif') no-repeat;
+}
+
+.top .content .login {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.top .content .login>ul .loginLeft a {
+    padding-right: 15px;
+    margin-right: 11px;
+    border-right: 1px solid #666;
+    color: #ccc;
+}
+.top .content .login>ul .loginLeft a:hover {
+    color: #cf9;
+}
+.top .content .login>ul .loginRight a:hover {
+    color: #cf9;
+}
+.top .content .login>ul .loginRight a {
+    color: #ccc;
+}
+
+.top .content .upload {
+    margin-right: 15px;
+}
+.top .content .vip {
+    margin-right: 20px;
+}
+.top .content .topSearch {
+    position: relative;
+    z-index: 299;
+    width: 215px;
+    height: 29px;
+    margin: 10px auto 0;
+    margin-right: 30px;
+}
+
+.top .content .appBox {
+    padding: 0 6px;
+    position: relative;
+    z-index: 299;
+    cursor: pointer;
+}
+.top .content .appBox a {
+    display: block;
+    padding: 0 12px 0 13px;
+    line-height: 50px;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.top .appBox>a:hover .appIcon {
+    background: url(../images/index/app_hover.png) no-repeat;
+}
+.top .appIcon {
+    background: url(../images/index/app.png) no-repeat;
+    width: 21px;
+    height: 33px;
+    margin-top: 17px;
+}
+.top .content .appBox:hover b {
+    background-position: -231px -18px;
+}
+.top .content .appDrop {
+    width: 95px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: #222;
+    z-index: 299;
+}
+.top .content .appDrop>li a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color: #ccc;
+    padding-left: 9px;
+    font-size: 14px;
+}
+.top .content .uploadbtn {
+    margin-right: 15px;
+}
+.top .content .uploadbtn a {
+    background: url(../images/index/topbar_icon.png) no-repeat 0 -33px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: 11px;
+}
+.top .content .uploadbtn:hover a {
+    background: url(../images/index/upload_hover.png) 7px 6px no-repeat;
+}
+
+.top .content .vip {
+    margin-right: 20px;
+}
+.top .content .vip a {
+    background: url(../images/index/topbar_icon.png) no-repeat -33px -33px;
+    display: block;
+    width: 33px;
+    height: 25px;
+    margin-top: 13px;
+}
+.top .content .vip:hover a {
+    background: url(../images/index/vip_hover.png) 6px 6px no-repeat;
+}
+
+.top .content .topSearch {
+    position: relative;
+    z-index: 299;
+    width: 215px;
+    height: 29px;
+    margin: 10px auto 0;
+    margin-right: 30px;
+}
+.top .topSearch .searchLeft {
+    position: absolute;
+    z-index: 291;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 29px;
+    background: url(../images/index/topbar_sprite2.png) no-repeat;
+}
+.top .topSearch .searchRight {
+    left: auto;
+    right: 0;
+    position: absolute;
+    z-index: 291;
+    top: 0;
+    width: 15px;
+    height: 29px;
+    background: url(../images/index/topbar_sprite2.png) no-repeat  -208px 0;
+}
+.top .topSearch .txt {
+    position: absolute;
+    z-index: 291;
+    top: 0;
+    left: 15px;
+    width: 185px;
+    height: 29px;
+    background: url(../images/index/topbar_sprite2.png) no-repeat -15px 0;
+}
+.top .topSearch .txt input {
+    margin-top: 7px;
+    width: 170px;
+    color: #898989;
+    background-color: transparent;
+}
+.top .topSearch button {
+    position: absolute;
+    z-index: 291;
+    top: 6px;
+    right: 13px;
+    width: 16px;
+    height: 17px;
+    text-indent: -999em;
+    cursor: pointer;
+    border: 0 none;
+    background: url(../images/index/topbar_sprite2.png) no-repeat -223px -1px;
+}
+/***********部样式结束******************/

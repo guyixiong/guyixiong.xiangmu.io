@@ -1,0 +1,1047 @@
+
+/******************网页顶部开始**************/
+.top {
+    position: fixed; !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 299;
+    background: #000;
+    font-size: 12px;
+    min-width: 1020px;
+}
+.top .content {
+    max-width: 1560px;
+    min-width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 299;
+}
+.top .content .logo a {
+    display: block;
+    width: 242px;
+    height: 49px;
+    margin: 0px 0px 0px -51px;
+    text-indent: -999em;
+    background: url(../images/index/logo.png) no-repeat;
+}
+.top .content>ul>li {
+    position: relative;
+    float: left;
+    margin: 0px 6px;
+}
+.top .content>ul .self {
+    color: #cf9;
+}
+.top .content>ul>li>a {
+    display: block;
+    padding: 0 12px 0 13px;
+    line-height: 50px;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+.top .content>ul>li>a:hover {
+    color: #cf9;
+    background-color: #222;
+}
+
+.top .content b {
+    width: 7px;
+    height: 4px;
+    cursor: pointer;
+    margin: 23px 0 0 3px;
+    font-size: 0;
+    background: url('../images/index/topbar_sprite2.png') no-repeat -223px -18px;
+    /*position: relative;*/
+}
+.top .content .mv:hover b {
+    background-position: -231px -18px;
+}
+.top .content .dropdownmenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 80px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: #222;
+    z-index: 299;
+}
+.top .content .dropdownmenu a {
+    display: block;
+    width: 71px;
+    height: 36px;
+    line-height: 36px;
+    color: #ccc;
+    padding-left: 9px;
+    font-size: 14px;
+}
+.top .content .dropdownmenu a:hover {
+    color: #fff;
+    background: #5a840a;
+}
+.top .shopgif {
+    background: url('../images/index/shop2.gif') no-repeat;
+}
+.top .shopgif:hover {
+    background: url('../images/index/shop2_hover.gif') no-repeat;
+}
+
+.top .content .login {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.top .content .login>ul .loginLeft a {
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #666;
+    color: #ccc;
+}
+.top .content .login>ul .loginLeft a:hover {
+    color: #cf9;
+}
+.top .content .login>ul .loginRight a:hover {
+    color: #cf9;
+}
+.top .content .login>ul .loginRight a {
+    color: #ccc;
+}
+
+.top .content .upload {
+    margin-right: 15px;
+}
+.top .content .vip {
+    margin-right: 20px;
+}
+.top .content .topSearch {
+    position: relative;
+    z-index: 299;
+    width: 215px;
+    height: 29px;
+    margin: 10px auto 0;
+    margin-right: 30px;
+}
+
+.top .content .appBox {
+    padding: 0 6px;
+    position: relative;
+    z-index: 299;
+    cursor: pointer;
+}
+.top .content .appBox a {
+    display: block;
+    padding: 0 12px 0 13px;
+    line-height: 50px;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.top .appBox>a:hover .appIcon {
+    background: url(../images/index/app_hover.png) no-repeat;
+}
+.top .appIcon {
+    background: url(../images/index/app.png) no-repeat;
+    width: 21px;
+    height: 33px;
+    margin-top: 17px;
+}
+.top .content .appBox:hover b {
+    background-position: -231px -18px;
+}
+.top .content .appDrop {
+    width: 95px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: #222;
+    z-index: 299;
+}
+.top .content .appDrop>li a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color: #ccc;
+    padding-left: 9px;
+    font-size: 14px;
+}
+.top .content .appDrop>li a:hover {
+    color: #fff;
+    background: #5a840a;
+}
+.top .content .uploadbtn {
+    margin-right: 15px;
+}
+.top .content .uploadbtn a {
+    background: url(../images/index/topbar_icon.png) no-repeat 0 -33px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: 11px;
+}
+.top .content .uploadbtn:hover a {
+    background: url(../images/index/upload_hover.png) 7px 6px no-repeat;
+}
+
+.top .content .vip {
+    margin-right: 20px;
+}
+.top .content .vip a {
+    background: url(../images/index/topbar_icon.png) no-repeat -33px -33px;
+    display: block;
+    width: 33px;
+    height: 25px;
+    margin-top: 13px;
+}
+.top .content .vip:hover a {
+    background: url(../images/index/vip_hover.png) 6px 6px no-repeat;
+}
+
+.top .content .topSearch {
+    position: relative;
+    z-index: 299;
+    width: 215px;
+    height: 29px;
+    margin: 10px auto 0;
+    margin-right: 30px;
+}
+.top .topSearch .searchLeft {
+    position: absolute;
+    z-index: 291;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 29px;
+    background: url(../images/index/topbar_sprite2.png) no-repeat;
+}
+.top .topSearch .searchRight {
+    left: auto;
+    right: 0;
+    position: absolute;
+    z-index: 291;
+    top: 0;
+    width: 15px;
+    height: 29px;
+    background: url(../images/index/topbar_sprite2.png) no-repeat  -208px 0;
+}
+.top .topSearch .txt {
+    position: absolute;
+    z-index: 291;
+    top: 0;
+    left: 15px;
+    width: 185px;
+    height: 29px;
+    background: url(../images/index/topbar_sprite2.png) no-repeat -15px 0;
+}
+.top .topSearch .txt input {
+    margin-top: 7px;
+    width: 170px;
+    color: #898989;
+    background-color: transparent;
+}
+.top .topSearch button {
+    position: absolute;
+    z-index: 291;
+    top: 6px;
+    right: 13px;
+    width: 16px;
+    height: 17px;
+    text-indent: -999em;
+    cursor: pointer;
+    border: 0 none;
+    background: url(../images/index/topbar_sprite2.png) no-repeat -223px -1px;
+}
+
+/********网页登录区开始********/
+
+.dialog {
+    margin-left: -375px;
+    margin-top: -190px;
+    width: 750px;
+    height: 0px;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+}
+.login-register {
+    display: block;
+    position: relative;
+    width: 750px;
+    height: 380px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.login-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/index/loginimg.jpg) no-repeat bottom center;
+}
+.login-view {
+    position: absolute;
+    width: 280px;
+    right: 60px;
+    top: 0;
+    z-index: 2;
+    font-size: 12px;
+}
+.login-tab {
+    font-size: 20px;
+    color: #474c56;
+    line-height: 72px;
+    height: 72px;
+}
+.login-tab a.login-active {
+    height: 70px;
+    color: #27d5bf;
+    border-bottom: 2px solid #27d5bf;
+}
+.login-tab a {
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 71px;
+    border-bottom: 1px solid #e1e1e7;
+}
+.login-tab a:hover {
+    color: #27d5bf;
+}
+.login-main-active {
+    display: block;
+}
+.login-error-tips {
+    margin: 5px 0;
+    height: 20px;
+    line-height: 20px;
+    color: #ff6699;
+}
+.login-text-long {
+    width: 258px;
+    margin-bottom: 15px;
+}
+.login-text-long, .login-text-short {
+    padding: 10px;
+    line-height: 18px;
+    border: 1px solid #e1e1e7;
+    background-color: #fff;
+    border-radius: 3px;
+    box-sizing: content-box;
+}
+.login-fun-wrap {
+    margin-bottom: 15px;
+}
+.login-text-short {
+    width: 118px;
+}
+.login-get-code {
+    width: 132px;
+    height: 40px;
+    cursor: pointer;
+    color: #767676;
+    background-color: #eee;
+}
+.login-fun-wrap .login-auto {
+    float: left;
+}
+.login-auto {
+    cursor: pointer;
+    color: #999;
+}
+.login-fun-wrap .login-forget {
+    float: right;
+}
+
+.login-auto input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.login-auto span {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    line-height: 14px;
+}
+.login-auto a {
+    color: #555;
+}
+.login-forget {
+    color: #999;
+}
+.login-forget:hover {
+    color: #27d5bf;
+}
+
+.login-submit {
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color: #27d5bf;
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    overflow: visible;
+}
+.login-third-wrap {
+    margin: 15px 0;
+}
+.login-third-wrap .third-text {
+    line-height: 26px;
+}
+.login-third-wrap span {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #999;
+}
+.login-third-wrap a {
+    font-size: 0;
+    overflow: hidden;
+}
+.ui-login-arrow, .ui-login-weibo, .ui-login-weixin, .ui-login-qq {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.ui-login-weibo {
+    background-position: 0 -159px;
+    height: 24px;
+    width: 29px;
+}
+
+.ui-sprite, .ui-login-arrow, .ui-login-qq, .ui-login-third, .ui-login-weibo, .ui-login-weixin {
+    background-image: url(../images/index/ui.png);
+    background-repeat: no-repeat;
+}
+.ui-login-weixin {
+    background-position: 0 -226px;
+    height: 23px;
+    width: 28px;
+}
+.ui-login-qq {
+    background-position: 0 -52px;
+    height: 23px;
+    width: 22px;
+}
+.ui-login-weibo:hover, .ui-login-weibo.login-weibo-hover {
+    background-position: 0 -125px;
+}
+.ui-login-weixin:hover, .ui-login-weixin.login-weixin-hover {
+    background-position: 0 -193px;
+}
+.ui-login-qq:hover, .ui-login-qq.login-qq-hover {
+    background-position: 0 -19px;
+}
+
+
+
+.dialog .ico_close {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 20px;
+    height: 18px;
+    background-position: 0 -620px;
+}
+.ico20_rise, .ico20_decline, .ico_close, .ico20_exchange, .ico20_v_unfold, .ico20_comma_l, .ico20_comma_r {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999em;
+    background: url(../images/index/ico20_1113.png) no-repeat;
+    z-index: 10;
+}
+/********网页登录区结束********/
+
+/******************网页顶部结束**************/
+
+/******************网页轮播图开始**************/
+
+.slideContent {
+    position: relative;
+    min-width: 1020px;
+    max-width: 1600px;
+    height: 480px;
+    margin: 41px auto 0;
+}
+.slideContent>ul li {
+    height: 480px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.slideContent>ul li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slideContent .slideTxt {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slideContent .slideTxt ul {
+    position: absolute;
+    background: url(../images/index/title_bg.png) no-repeat;
+    width: 258px;
+    height: 390px;
+    padding-top: 14px;
+    top: 29px;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.slideContent .slideTxt li>a {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    width: 230px;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/******************网页轮播结束**************/
+
+/******************网页主体开始**************/
+
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #fff;
+}
+.main .appDown {
+    overflow: hidden;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px 0px;
+    display: block;
+    width: 100%;
+}
+.main .appDown img {
+    border: 0 none;
+}
+.main .mainContentOut {
+    border-bottom: 4px solid #f3f5f7;
+}
+.main .mainContentInner {
+    width: 1220px;
+    margin: 0 auto;
+}
+.main .mainContentInner .titleBox {
+    padding: 34px 0 16px;
+    overflow: hidden;
+}
+.titleBox h3 {
+    font-size: 20px;
+    color: #000;
+    float: left;
+    line-height: 20px;
+    font-weight: bold;
+}
+.titleBox ul {
+    float: right;
+}
+.titleBox ul li:first-child {
+    background: none;
+}
+.titleBox ul li.cur a {
+    color: #52e2c0;
+    border-bottom: 2px solid #52e2c0;
+}
+.titleBox ul li {
+    float: left;
+    background: url(../images/index/dash_border.png) 0 no-repeat;
+    padding: 0 19px;
+}
+.titleBox ul li a {
+    color: #666;
+    font-size: 14px;
+    padding-bottom: 16px;
+    line-height: 20px;
+}
+.line {
+    height: 2px;
+    background: #f4f4f4;
+    margin-top: -2px;
+}
+.contentBox {
+    padding-top: 17px;
+    height: 398px;
+    overflow: hidden;
+    position: relative;
+}
+.main .mainContentInner .contentBox_row1 {
+    height: 199px;
+}
+.contentBox ul {
+    overflow: hidden;
+}
+.contentBox li.li01 {
+    margin-left: 0;
+    width: 470px;
+}
+.contentBox li {
+    float: left;
+    margin-left: 30px;
+    width: 220px;
+}
+.sliderBox {
+    position: relative;
+    overflow: hidden;
+}
+.sliderBox .slider {
+    width: 940px;
+    margin-left: 0px;
+    height: 378px;
+    position: relative;
+    overflow: hidden;
+}
+.sliderBox .sliderEle {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 470px;
+    height: 377px;
+    margin-left: 0;
+}
+.contentBox li.li01 img {
+    width: 470px;
+    height: 323px;
+    display: block;
+}
+.contentBox .mv-prev {
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+    left: 10px;
+    background: url(../images/index/arrow.png);
+}
+.contentBox .mv-prev:hover {
+    background-position: 0 -25px;
+}
+.contentBox .mv-next {
+    width: 13px;
+    height: 25px;
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+    right: 10px;
+    background: url(../images/index/arrow.png) -13px 0;
+}
+.contentBox .mv-next:hover {
+    background-position: -13px -25px;
+}
+/*.mv-prev, .mv-prev:hover, .mv-next, .mv-next:hover {*/
+    /*background: url(../images/index/arrow.png);*/
+    /*width: 13px;*/
+    /*height: 25px;*/
+    /*position: absolute;*/
+    /*top: 150px;*/
+    /*cursor: pointer;*/
+/*}*/
+
+.contentBox li img {
+    width: 220px;
+    height: 124px;
+    display: block;
+    border: 0 none;
+}
+.contentBox li h5 {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 12px 12px 10px;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.contentBox li p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 12px 21px;
+    color: #a4a4a4;
+    width: 196px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.contentBox li h5.nosub {
+    line-height: 25px;
+    height: 52px;
+    overflow: hidden;
+    margin: 7px 12px 16px;
+    text-overflow: inherit;
+    white-space: inherit;
+}
+.contentBox .mv_one:hover h5, .contentBox .mv_one:hover p {
+    color: #52e2c0;
+}
+.contentBox li.li01:hover h5, .contentBox li.li01:hover p {
+    color: #52e2c0;
+}
+.titleBox ul li a:hover {
+    color: #52e2c0;
+}
+
+
+.contentBox ul {
+    overflow: hidden;
+}
+.contentBox ul.hotList li {
+    display: none;
+}
+.contentBox li:first-child {
+    margin-left: 0;
+}
+.contentBox ul.hotList .marginLeft0 {
+    margin-left: 0;
+}
+.titleBox .change:hover {
+    background: url(../images/index/change_hover.png) no-repeat;
+    color: #52e2c0;
+}
+.titleBox .change {
+    color: #a4a4a4;
+    font-size: 14px;
+    float: right;
+    background: url(../images/index/change.png) 3px 3px no-repeat;
+    padding-left: 23px;
+}
+.contentBox_row1 li:hover h5, .contentBox_row1 li:hover p {
+    color: #52e2c0;
+}
+
+
+.titleBox .titleLink {
+    float: left;
+    margin-left: 15px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+.titleBox .titleLink a {
+    color: #666;
+    font-size: 14px;
+    padding: 0 13px;
+    line-height: 14px;
+    float: left;
+    border-left: 1px solid #e5e5e5;
+}
+.titleBox h3 > a:hover {
+    color: #000;
+}
+.titleBox h3 > a {
+    color: #000;
+}
+.titleBox .titleLink a:hover {
+    color: #52e2c0;
+}
+
+.contentBox_vchart ul, .contentBox_program ul {
+    height: 378px;
+    overflow: hidden;
+}
+.contentBox li.li01 {
+    margin-left: 0;
+    width: 470px;
+}
+
+.contentBox_vchart li h4.date_ch, .contentBox_program li h4.date_ch {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.contentBox_vchart li span.date_en, .contentBox_program li span.date_en {
+    color: #a4a4a4;
+    display: block;
+    margin-bottom: 15px;
+}
+.contentBox_vchart li .vchart_item, .contentBox_program li .program_item {
+    border-top: 1px solid #f4f4f4;
+    cursor: pointer;
+    height: 73px;
+}
+.contentBox_vchart li .vchart_item img, .contentBox_program li .program_item img {
+    height: 120px;
+    display: none;
+}
+.contentBox_vchart li h5, .contentBox_program li h5 {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 12px 12px 8px;
+    max-height: 50px;
+    text-overflow: inherit;
+    white-space: inherit;
+}
+.contentBox li.li01 h5 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 12px 12px 12px;
+    width: 445px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.contentBox_vchart li .vchart_item_active, .contentBox_vchart li .vchart_item01, .contentBox_program li .program_item_active, .contentBox_program li .program_item01 {
+    border-top: none;
+    height: 192px;
+}
+.contentBox_vchart li .vchart_item_active img, .contentBox_vchart li .vchart_item01 img, .contentBox_program li .program_item01 img, .contentBox_program li .program_item_active img {
+    display: block;
+}
+.contentBox_vchart li .vchart_item_active h5, .contentBox_program li .program_item_active h5 {
+    color: #52e2c0;
+}
+
+
+.titleBox .moreLink:hover {
+    color: #52e2c0;
+}
+.titleBox .moreLink {
+    color: #a4a4a4;
+    font-size: 14px;
+    float: right;
+}
+
+
+.contentBox_playlist {
+    height: 294px;
+}
+.contentBox_playlist ul {
+    height: 270px;
+    overflow: hidden;
+}
+.contentBox_playlist li {
+    position: relative;
+    cursor: pointer;
+}
+.contentBox_playlist li img {
+    width: 220px;
+    height: 220px;
+}
+.contentBox_playlist li h5 {
+    margin: 11px 12px 8px;
+}
+.contentBox_playlist li p {
+    margin: 0 12px;
+}
+.contentBox_playlist .hoverBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 270px;
+    background: #f3f5f7;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+.hoverBox .img_box {
+    float: left;
+    width: 270px;
+    height: 270px;
+}
+.hoverBox .info_box {
+    padding: 0 22px;
+    width: 155px;
+    float: right;
+    border: 1px solid #e5e5e5;
+    border-left: 0;
+    height: 268px;
+}
+.hoverBox .img_box img {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.hoverBox .img_box_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/index/play_icon.png) no-repeat;
+    background-size: 100%;
+    width: 270px;
+    height: 270px;
+}
+.hoverBox .info_box .heightLimit {
+    height: 145px;
+    overflow: hidden;
+}
+.hoverBox:hover h4, .hoverBox:hover .userName, .hoverBox:hover .tag {
+    color: #000;
+}
+.hoverBox .info_box h4 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.hoverBox .info_box .des {
+    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 23px;
+    margin-top: -6px;
+    display: block;
+}
+.hoverBox .user_box {
+    overflow: hidden;
+    margin-top: 7px;
+}
+.hoverBox .user_box img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+.hoverBox .user_box .userName {
+    font-size: 14px;
+    margin-left: 50px;
+    line-height: 40px;
+    display: block;
+}
+.hoverBox .info_box .count {
+    font-size: 12px;
+    color: #a4a4a4;
+    margin-left: 50px;
+    display: block;
+}
+.hoverBox .info_box .count i {
+    background: url(../images/index/playcount.png) no-repeat;
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.hoverBox .info_box .tag {
+    font-size: 14px;
+    margin-top: 7px;
+    display: block;
+    height: 21px;
+    width: 155px;
+    overflow: hidden;
+}
+
+
+.contentBox ul.guessList li {
+    display: none;
+}
+.contentBox ul.guessList .marginLeft0 {
+    margin-left: 0;
+}
+/******************网页主体结束**************/
+
+
+/******************网页底部开始**************/
+.footer {
+    margin: 30px auto 0;
+    min-width: 1000px;
+    height: 150px;
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+    background-color: #fff;
+}
+.footer_link {
+    font-size: 14px;
+    padding: 35px 0 20px;
+    color: #666;
+}
+.footer_link a {
+    color: #666;
+}
+.ico_line {
+    width: 2px;
+    height: 10px;
+    margin: 0 8px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../images/index/ico_index.png) no-repeat -70px 0;
+}
+.footer_copy a {
+    color: #999;
+}
+.footer_copy .culture img {
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+.footer_copy .police-store img {
+    vertical-align: top;
+}
+.footer_copy .positionImg img {
+    vertical-align: top;
+    margin-top: -25px;
+}
+.footer a:hover {
+    color: #690;
+    text-decoration: none;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/******************网页底部结束**************/
+
+/******************网页返回顶部**************/
+
+.return_top_wrapper {
+    height: 65px;
+    position: fixed;
+    /*top: 191px;*/
+    /*bottom: 100px;*/
+    right: 0;
+    z-index: 298;
+    overflow: hidden;
+    display: none;
+}
+.return_top_wrapper div {
+    height: 65px;
+    width: 50px;
+}
+.return_top_wrapper a {
+    position: absolute;
+    height: 65px;
+    width: 50px;
+    top: 0;
+}
+.return_top_wrapper a.return_top_static {
+    background: url(../images/index/returntop.png) no-repeat;
+    left: 0;
+}
+.return_top_wrapper a.return_top_running {
+    background: url(../images/index/returntop.png) no-repeat;
+    position: absolute;
+    left: -50px;
+}

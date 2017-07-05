@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MV频道-音悦Tai-让娱乐更美好</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/mv/base.css">
+    <link rel="stylesheet" href="css/mv/mv-huayu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index/animate.js"></script>
+    <script src="js/index/common.js"></script>
+</head>
+
+<body>
+<!--顶部开始-->
+<div class="top">
+    <div class="content clearfix">
+        <h1 class="fl">
+            <div class="logo">
+                <a href="index.html" title="音悦Tai"></a>
+            </div>
+        </h1>
+        <ul class="fl">
+            <li><a href="index.html">首页</a></li>
+            <li class="mv" id="mv"><a href="mv-huayu.html">
+                <span class="fl self">MV</span>
+                <b class="fl"></b>
+            </a>
+                <ul class="dropdownmenu" id="mvDrop">
+                    <li><a href="mv-huayu.html" javascript="void(0);">韩流频道</a></li>
+                    <li><a href="mv-huayu.html">华语频道</a></li>
+                    <li><a href="mv-huayu.html">欧美频道</a></li>
+                    <li><a href="mv-huayu.html">日语频道</a></li>
+                    <li><a href="mv-huayu.html">粉丝聚焦</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">V榜</a></li>
+            <li><a href="yule.html">娱乐</a></li>
+            <li><a href="mallindex.html" target="_blank" class="shopgif">商城</a></li>
+            <li><a href="zhongchou.html">众筹</a></li>
+            <li><a href="index.html">民俗文化</a></li>
+        </ul>
+        <div class="login fr">
+            <ul id="loginHandle">
+                <li class="fl loginLeft" id="login1"><a href="javascript:void(0);">登录</a></li>
+                <li class="fl loginRight" id="login2"><a href="javascript:void(0);">注册</a></li>
+            </ul>
+        </div>
+        <div class="appBox fr" id="appBox">
+            <a href="#">
+                <span class="fl appIcon"></span>
+                <b class="fl"></b>
+            </a>
+            <ul class="appDrop" id="appDrop">
+                <li><a href="#">移动客户端</a></li>
+                <li><a href="#">PC客户端</a></li>
+                <li><a href="#">Star明星直播</a></li>
+            </ul>
+        </div>
+        <div class="uploadbtn fr">
+            <a href="#"></a>
+        </div>
+        <div class="vip fr"><a href="#"></a></div>
+        <div class="topSearch fr">
+            <div class="searchLeft"></div>
+            <div class="searchRight"></div>
+            <div class="txt">
+                <input type="text" name="keywords" placeholder="找你喜欢的吧，别烦我"/>
+            </div>
+            <button class="searchIcon"></button>
+        </div>
+    </div>
+</div>
+<!--  网页顶部js  -->
+<script>
+    var mvDrop = $id("mvDrop");
+    var mv = $id("mv");
+    mv.onmouseover = function () {
+        animate3(mvDrop, {height: "180px", opacity: "1"}, 10);
+    }
+    mv.onmouseout = function () {
+        animate3(mvDrop, {height: "0", opacity: "0"}, 10);
+    }
+    var appDrop = $id("appDrop");
+    var appBox = $id("appBox");
+    appBox.onmouseover = function () {
+        animate3(appDrop, {height: "108px", opacity: "1"}, 10);
+    }
+    appBox.onmouseout = function () {
+        animate3(appDrop, {height: "0", opacity: "0"}, 10);
+    }
+</script>
+
+<!--   登录注册区域开始   -->
+<div class="dialog" id="dialog">
+    <div class="login-register">
+        <div class="login-image login-image-transition">
+        </div>
+        <div class="login-view">
+            <div class="login-tab" id="login-tab">
+                <a href="javascript:void(0)" class="login-active" id="hideLogin1">登录</a>
+                <a href="javascript:void(0)" id="hideLogin2">注册</a>
+            </div>
+            <div class="login-main login-main-active" id="login-area">
+                <form id="login-form">
+                    <div>
+                        <input type="text" name="mobile" class="login-text-long" placeholder="请输入手机号码或邮箱">
+                    </div>
+                    <div>
+                        <input type="password" class="login-text-long" placeholder="请输入密码">
+                    </div>
+                    <div class="clearfix login-fun-wrap">
+                        <label class="login-auto">
+                            <input type="checkbox" name="autologin" checked="">
+                            <span>自动登录</span>
+                        </label>
+                        <a href="javascript:void(0)" target="_blank" class="login-forget">忘记密码</a>
+                    </div>
+                    <input type="submit" value="登录" class="login-submit">
+                </form>
+                <div id="other-login">
+                    <div class="login-third-wrap">
+                        <span class="third-text">第三方登录:</span>
+                        <span><a href="javascript:void(0)" target="_blank" class="ui-login-weibo">新浪登录</a></span>
+                        <span><a href="javascript:void(0)" target="_blank" class="ui-login-weixin">微信登录</a></span>
+                        <span><a href="javascript:void(0)" target="_blank" class="ui-login-qq">QQ登录</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="login-main" id="register-area" style="display: none;">
+                <form id="register-form">
+                    <div class="login-error-tips">
+                    </div>
+                    <div>
+                        <input type="text" name="mobile" class="login-text-long" placeholder="请输入手机号码">
+                    </div>
+                    <div>
+                        <input type="password" class="login-text-long" placeholder="密码为6-20位字符，支持大小写">
+                        <div class="login-code-wrap">
+                            <input type="text" name="code" class="login-text-short" placeholder="请输入验证码">
+                            <input type="button" class="login-get-code" value="获取验证码">
+                        </div>
+                    </div>
+                    <input type="submit" value="立即注册" class="login-submit">
+                    <div class="login-fun-wrap">
+                        <label class="login-auto">
+                            <input type="checkbox" name="agree" checked="">
+                            <span>我已阅读并同意<a href="http://login.yinyuetai.com/terms_of_service" target="_blank">《音悦Tai服务条款》</a></span>
+                        </label>
+                    </div>
+                    <input name="sign" type="hidden" value="b4ad61f5077729bb5">
+                    <input name="encpsw" type="hidden" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="ico_close J_close" id="loginClose" hidefocus="true">关闭</a>
+</div>
+
+<!--登录区域js-->
+<script>
+    var dialog=$id("dialog");
+    var login1=$id("login1");
+    var login2=$id("login2");
+    var hideLogin1=$id("hideLogin1");
+    var hideLogin2=$id("hideLogin2");
+    var loginArea=$id("login-area");
+    var registerArea=$id("register-area");
+    login1.onclick= function () {
+        dialogShow();
+        loginHandle();
+    }
+    login2.onclick= function () {
+        dialogShow();
+        registerHandle();
+    }
+    hideLogin1.onclick= loginHandle;
+    hideLogin2.onclick= registerHandle;
+    function dialogShow() {
+        dialog.style.display="block";
+        dialog.style.overflow="hidden";
+        animate3(dialog,{height:"380px"},10);
+    }
+    function loginHandle(){
+        hideLogin2.removeAttribute("class");
+        hideLogin1.className="login-active";
+        loginArea.className="login-main login-main-active";
+        registerArea.style.display="none";
+        loginArea.style.display="block";
+    }
+    function registerHandle() {
+        hideLogin1.removeAttribute("class");
+        hideLogin2.className="login-active";
+        loginArea.style.display="none";
+        registerArea.className="login-main login-main-active";
+        registerArea.style.display="block";
+    }
+
+
+    var loginClose=$id("loginClose");
+    loginClose.onclick= function () {
+        dialog.style.display="none";
+        dialog.style.height="0px";
+    }
+</script>
+
+<!--   登录注册区域结束   -->
+
+<!--网页顶部结束-->
+
+<!--顶部结束-->
+
+<!--内容部分开始-->
+<div class="container">
+    <!--mv导航开始-->
+    <div class="mv-bar w clearfloat">
+        <div class="mv-bar-left fl">
+            <h3>MV频道</h3>
+        </div>
+        <div class="mv-bar-right fr">
+            <ul>
+                <li><a href="javascript:void(0);">韩流频道</a></li>
+                <li><a href="javascript:void(0);">欧美频道</a></li>
+                <li><a href="javascript:void(0);">日语频道</a></li>
+                <li><a href="javascript:void(0);">粉丝聚焦</a></li>
+                <li><a href="javascript:void(0);">精品悦单</a></li>
+                <li><a href="javascript:void(0);">全部视频</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--mv导航结束-->
+
+    <!--channel-box开始-->
+    <div class="channel-box w clearfloat">
+        <!--左侧轮播图开始-->
+        <div class="sider-box fl" id="lbtbox">
+            <div class="lbt" id="lbt">
+                <ul>
+                    <li>
+                        <a href=""><img src="images/mv/lbt01.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/mv/lbt02.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/mv/lbt03.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <span class="left" id="lbtleft"></span>
+            <span class="right" id="lbtright"></span>
+            <div class="slide-count">
+                <!--<span class="cur-count">1</span>-->
+                <!--<span>/3</span>-->
+                <i class="cur-count">1</i>
+                <i>/3</i>
+            </div>
+        </div>
+        <!--左侧轮播图结束-->
+        <!--右侧mv热榜开始-->
+        <div class="hot-box fr">
+            <h4>MV热榜</h4>
+            <ul class="hot-list">
+                <li>
+                    <div class="normal one">
+                        <P class="song-name">V榜TOP10 第20期</P>
+                        <P class="song-art">音悦V榜</P>
+                    </div>
+                    <div class="current two">
+                        <a href=""><img src="images/mv/hot-01.jpg" alt="">
+                            <div>
+                                <a href="">V榜TOP10 第20期</a>
+                                <a href="">音悦V榜</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">V榜TOP10 第19期</P>
+                        <P class="song-art">音悦V榜</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-02.jpg" alt="">
+                            <div>
+                                <a href="">V榜TOP10 第19期</a>
+                                <a href="">音悦V榜</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">EP187 未出道就大火的练习生们</P>
+                        <P class="song-art">音悦V榜特别企划</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-03.jpg" alt="">
+                            <div>
+                                <a href="">EP187 未出道就大火的练习生们</a>
+                                <a href="">音悦V榜特别企划</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">&lt;有点儿意思&gt;练习室版MV</P>
+                        <P class="song-art">音悦V榜特别企划</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-04.jpg" alt="">
+                            <div>
+                                <a href="">&lt;有点儿意思&gt;练习室版MV</a>
+                                <a href="">音悦V榜特别企划</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">V榜街头人气王 V榜屯里见EP03</P>
+                        <P class="song-art">音悦V榜</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-05.jpg" alt="">
+                            <div>
+                                <a href="">V榜街头人气王 V榜屯里见EP03</a>
+                                <a href="">音悦V榜</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">易燃易爆炸 1.5倍病娇版 饭制版</P>
+                        <P class="song-art">华晨宇</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-06.jpg" alt="">
+                            <div>
+                                <a href="">易燃易爆炸 1.5倍病娇版 饭制版</a>
+                                <a href="">华晨宇</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">厉害了!翻唱达人B-Box蔡依林组曲!</P>
+                        <P class="song-art">蔡依林</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-07.jpg" alt="">
+                            <div>
+                                <a href="">厉害了!翻唱达人B-Box蔡依林组曲!</a>
+                                <a href="">蔡依林</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">电视剧《醉玲珑》 首款预告片</P>
+                        <P class="song-art">陈伟霆</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-08.jpg" alt="">
+                            <div>
+                                <a href="">电视剧《醉玲珑》 首款预告片</a>
+                                <a href="">陈伟霆</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">厉害了厉害了</P>
+                        <P class="song-art">龙梅子</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-09.jpg" alt="">
+                            <div>
+                                <a href="">厉害了厉害了</a>
+                                <a href="">龙梅子</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="normal">
+                        <P class="song-name">苏打绿家凯&amp;青峰【年轮说 Traces of Time In Love】</P>
+                        <P class="song-art">杨丞琳</P>
+                    </div>
+                    <div class="current">
+                        <a href=""><img src="images/mv/hot-10.jpg" alt="">
+                            <div>
+                                <a href="">苏打绿家凯&amp;青峰【年轮说 Traces of Time In Love】</a>
+                                <a href="">杨丞琳</a>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--右侧mv热榜结束-->
+
+    </div>
+    <!--channl-box结束-->
+
+    <!--hot-pragram开始-->
+    <div class="hot-pragram w clearfloat">
+        <div class="pragram-nav fl">
+            <ul>
+                <li class="pragram-cur"><a href="javascript:void(0)">周一 V榜TOP10</a></li>
+                <li><a href="javascript:void(0)">周二 V榜看音乐</a></li>
+                <li><a href="javascript:void(0)">周三 V榜密谈室</a></li>
+                <li><a href="javascript:void(0)">周四 V榜有话说</a></li>
+                <li><a href="javascript:void(0)">周五 V榜特别企划</a></li>
+            </ul>
+        </div>
+        <div class="pragram-info fr">
+            <div class="pragram-box">
+                <h3>V榜单看音乐</h3>
+                <p>为你推荐全球美妙好音乐，我的音乐我做主！</p>
+            </div>
+            <div class="pragram-video">
+                <div class="pv-box">
+                    <a href="" class="pv-link fl">
+                        <img src="images/mv/vb01.jpg" alt="">
+                        <i class="vbo"></i>
+                    </a>
+                    <div class="pv-info fr">
+                        <h3><a href="">V榜TOP10 第20期</a></h3>
+                        <p>2017年第20期V榜TOP10,带你全面掌握五地榜单!本周内地薛之谦、港台余文乐&杨千嬅、欧美ED Shearn韩国Jessica、日本己龙强势夺冠!更多精彩MV节目里见!</p>
+                    </div>
+                </div>
+                <div class="pv-box" style="display: none">
+                    <a href="" class="pv-link fl">
+                        <img src="images/mv/vb-02.jpg" alt="">
+                        <i class="vbo"></i>
+                    </a>
+                    <div class="pv-info fr">
+                        <h3><a href="">出场自带动漫BGM的歌手</a></h3>
+                        <p>
+                            在盛产动漫的霓虹国,动漫作品是让一位歌手能够得到快速认知的捷径,如果是演唱了一部超人气动漫大火之后,基本这些歌手身上都会自带一种神奇属性,移动式的动漫BGM!他的出场必须搭配这首动漫歌曲才叫完美</p>
+                    </div>
+                </div>
+                <div class="pv-box" style="display: none">
+                    <a href="" class="pv-link fl">
+                        <img src="images/mv/vb-03.jpg" alt="">
+                        <i class="vbo"></i>
+                    </a>
+                    <div class="pv-info fr">
+                        <h3><a href="">我叫魏如萱,不是魏如昀</a></h3>
+                        <p>
+                            Waa魏如萱带着自己的新专辑《末路狂花》跟音悦V榜的粉丝朋友们见面啦!新专辑中有什么故事?拍摄MV时竟被收保护费?小S、林宥嘉鼻子塞纸巾唱歌又是为何?和妹妹两个人经常被人认错?操心粉丝感情状况,开演唱会还不忘搞联谊?更多精彩内容赶紧进节目吧!</p>
+                    </div>
+                </div>
+                <div class="pv-box" style="display: none">
+                    <a href="" class="pv-link fl">
+                        <img src="images/mv/vb04.jpg" alt="">
+                        <i class="vbo"></i>
+                    </a>
+                    <div class="pv-info fr">
+                        <h3><a href="">TFBOYS究竟可以复制吗</a></h3>
+                        <p>
+                            2014年以一首“左手右手慢动作”风靡的TFBOYS如今已是国民级的偶像组合,从小众火爆,到网络群嘲,再到天团登顶,TFBOYS的成功被整个娱乐圈都看在眼里,众多鲜肉男团也顺应而已,他们难免会借鉴,难免被比较,那么TFBOYS究竟可以复制吗?本期编导阿姨带你说道说道!</p>
+                    </div>
+                </div>
+                <div class="pv-box" style="display: none">
+                    <a href="" class="pv-link fl">
+                        <img src="images/mv/vb-05.jpg" alt="">
+                        <i class="vbo"></i>
+                    </a>
+                    <div class="pv-info fr">
+                        <h3><a href="">EP187 未出道就大火的练习生们</a></h3>
+                        <p>
+                            2017刚开年,不管是盛产偶像组合的韩国还是我大天朝,众多新人组合如春笋般爆发涌出,恨不得在已经饱和的市场再抢一杯羹,五花八门不同类型的各路新人用各种方式冲进你的视野。但在如今注重数据流量的娱乐市场中,究竟哪些才是决定这些练习生能否出道的关键呢,今天小编就来带你神扒这些未出道就先大火的大势练习生养成模式吧!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--hot-pragram结束-->
+
+    <!--mv模块开始-->
+    <div class="mv-big-box w">
+        <div class="mv-box">
+            <div class="title-box">
+                <h3>MV</h3>
+            </div>
+            <div class="mv-list-box">
+                <ul>
+                    <!--<li class="li01">-->
+                        <!--<a href=""><img src="images/mv/MV-1.jpg" alt="">-->
+                            <!--<h5>小情书 电影《小情书》同名推广曲</h5>-->
+                            <!--<p>用青春写的情书，笔触都是当初</p>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <li class="li01">
+                        <a href=""><img src="images/mv/mv-01-01.jpg" alt="">
+                            <h5>骄傲的少年 《高能少年团》主题曲</h5>
+                            <p>有欢笑,有汗水,这就是青春和成长</p>
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="mv-v2">
+                        <div>
+                            <a href="">
+                                <img src="images/mv/MV-02.jpg" alt="">
+                                <h5>后来呢 官方版</h5>
+                                <p>徐浩大秀演技诠释内心温暖独白</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="images/mv/MV-05.jpg" alt="">
+                                <h5>很不低调 官方版</h5>
+                                <p>抖腿神曲！</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="mv-v2">
+                        <div>
+                            <a href="">
+                                <img src="images/mv/MV-03.jpg" alt="">
+                                <h5>玩滑板的孩子不会变坏 官方版</h5>
+                                <p>玩音乐的孩子只会更帅！</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="images/mv/MV-06.jpg" alt="">
+                                <h5>我们 电视剧《欢乐颂2》片尾曲</h5>
+                                <p>五美2.0欢乐上线</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="mv-v2">
+                        <div>
+                            <a href="">
+                                <img src="images/mv/MV-04.jpg" alt="">
+                                <h5>小时候 电影《“吃吃”的爱》推广曲</h5>
+                                <p>林志玲小S“相爱相杀”</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="images/mv/MV-07.jpg" alt="">
+                                <h5>We Are One</h5>
+                                <p>创纪录的集结了华人世界八位天后</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--mv模块结束-->
+
+    <!--周榜冠军开始-->
+    <div class="week-champion">
+    <div class="champion">
+        <div class="champ-title clearfloat">
+            <span class="title fl">周榜冠军</span>
+            <span class="date fl">2017年 第20期 (05.08~05.14)</span>
+            <div class="area fr">
+                <a href="javascript:void(0)" style="border-bottom: 1px #34d7c3 solid">内地篇</a>
+                <span></span>
+                <a href="javascript:void(0)">港台篇</a>
+                <span></span>
+                <a href="javascript:void(0)">欧美篇</a>
+                <span></span>
+                <a href="javascript:void(0)">韩国篇</a>
+                <span></span>
+                <a href="javascript:void(0)">日本篇</a>
+                <span></span>
+                <a href="javascript:void(0)">China V Chart</a>
+                <span></span>
+            </div>
+        </div>
+        <div class="champ-content clearfloat" style="display: block">
+            <div class="champ-img fl">
+                <a href=""><img src="images/mv/cham01.jpg" alt=""></a>
+            </div>
+            <div class="champ-data fr">
+                <div class="week-data">
+                    <div class="week-info">
+                        <h3>高尚 官方版</h3>
+                        <p>--<a href="">薛之谦</a></p>
+                    </div>
+                    <span class="cham-icon"></span>
+                    <ul class="clearfloat">
+                        <li>
+                            <h3>站内完整播放</h3>
+                            <p>99007</p>
+                        </li>
+                        <li>
+                            <h3>站外完整播放</h3>
+                            <p>47290</p>
+                        </li>
+                        <li>
+                            <h3>收藏次数</h3>
+                            <p>7711</p>
+                        </li>
+                        <li>
+                            <h3>下载次数</h3>
+                            <p>1792</p>
+                        </li>
+                        <li>
+                            <h3>百度热度</h3>
+                            <p>5865</p>
+                        </li>
+                        <li>
+                            <h3>移动端分享</h3>
+                            <p>14365</p>
+                        </li>
+                        <li>
+                            <h3>移动端播放</h3>
+                            <p>12124512</p>
+                        </li>
+                        <li>
+                            <h3>移动端缓存</h3>
+                            <p>14575</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="champ-content clearfloat">
+            <div class="champ-img fl">
+                <a href=""><img src="images/mv/cham02.jpg" alt=""></a>
+            </div>
+            <div class="champ-data fr">
+                <div class="week-data">
+                    <div class="week-info">
+                        <h3>当我想起你 电影《春娇救志明》插曲</h3>
+                        <p>--<a href="">杨千嬅 & 余文乐</a></p>
+                    </div>
+                    <span class="cham-icon"></span>
+                    <ul class="clearfloat">
+                        <li>
+                            <h3>站内完整播放</h3>
+                            <p>9320</p>
+                        </li>
+                        <li>
+                            <h3>站外完整播放</h3>
+                            <p>20</p>
+                        </li>
+                        <li>
+                            <h3>收藏次数</h3>
+                            <p>71</p>
+                        </li>
+                        <li>
+                            <h3>下载次数</h3>
+                            <p>252</p>
+                        </li>
+                        <li>
+                            <h3>百度热度</h3>
+                            <p>2865</p>
+                        </li>
+                        <li>
+                            <h3>移动端分享</h3>
+                            <p>95</p>
+                        </li>
+                        <li>
+                            <h3>移动端播放</h3>
+                            <p>2852</p>
+                        </li>
+                        <li>
+                            <h3>移动端缓存</h3>
+                            <p>622</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="champ-content clearfloat">
+            <div class="champ-img fl">
+                <a href=""><img src="images/mv/kt.jpeg" alt="" class="ed"></a>
+            </div>
+            <div class="champ-data fr">
+                <div class="week-data">
+                    <div class="week-info">
+                        <h3>Swish Swish</h3>
+                        <p>--<a href="">Katy Perry feat. Nicki Minaj</a></p>
+                    </div>
+                    <span class="cham-icon"></span>
+                    <ul class="clearfloat">
+                        <li>
+                            <h3>站内完整播放</h3>
+                            <p>15194</p>
+                        </li>
+                        <li>
+                            <h3>站外完整播放</h3>
+                            <p>134</p>
+                        </li>
+                        <li>
+                            <h3>收藏次数</h3>
+                            <p>386</p>
+                        </li>
+                        <li>
+                            <h3>下载次数</h3>
+                            <p>239</p>
+                        </li>
+                        <li>
+                            <h3>百度热度</h3>
+                            <p>1712</p>
+                        </li>
+                        <li>
+                            <h3>移动端分享</h3>
+                            <p>283</p>
+                        </li>
+                        <li>
+                            <h3>移动端播放</h3>
+                            <p>9313</p>
+                        </li>
+                        <li>
+                            <h3>移动端缓存</h3>
+                            <p>2893</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="champ-content clearfloat">
+            <div class="champ-img fl">
+                <a href=""><img src="images/mv/cham04.jpg" alt=""></a>
+            </div>
+            <div class="champ-data fr">
+                <div class="week-data">
+                    <div class="week-info">
+                        <h3>因为是春天 Music Film</h3>
+                        <p>--<a href="">Jessica</a></p>
+                    </div>
+                    <span class="cham-icon"></span>
+                    <ul class="clearfloat">
+                        <li>
+                            <h3>站内完整播放</h3>
+                            <p>14982</p>
+                        </li>
+                        <li>
+                            <h3>站外完整播放</h3>
+                            <p>12667</p>
+                        </li>
+                        <li>
+                            <h3>收藏次数</h3>
+                            <p>1629</p>
+                        </li>
+                        <li>
+                            <h3>下载次数</h3>
+                            <p>1665</p>
+                        </li>
+                        <li>
+                            <h3>百度热度</h3>
+                            <p>9835</p>
+                        </li>
+                        <li>
+                            <h3>移动端分享</h3>
+                            <p>3236</p>
+                        </li>
+                        <li>
+                            <h3>移动端播放</h3>
+                            <p>19920</p>
+                        </li>
+                        <li>
+                            <h3>移动端缓存</h3>
+                            <p>3088</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="champ-content clearfloat">
+            <div class="champ-img fl">
+                <a href=""><img src="images/mv/cham05.jpg" alt=""></a>
+            </div>
+            <div class="champ-data fr">
+                <div class="week-data">
+                    <div class="week-info">
+                        <h3>私ハ傀儡、猿轡ノ人形 官方版</h3>
+                        <p>--<a href="">己龙</a></p>
+                    </div>
+                    <span class="cham-icon"></span>
+                    <ul class="clearfloat">
+                        <li>
+                            <h3>站内完整播放</h3>
+                            <p>7147</p>
+                        </li>
+                        <li>
+                            <h3>站外完整播放</h3>
+                            <p>4450</p>
+                        </li>
+                        <li>
+                            <h3>收藏次数</h3>
+                            <p>821</p>
+                        </li>
+                        <li>
+                            <h3>下载次数</h3>
+                            <p>380</p>
+                        </li>
+                        <li>
+                            <h3>百度热度</h3>
+                            <p>7865</p>
+                        </li>
+                        <li>
+                            <h3>移动端分享</h3>
+                            <p>145</p>
+                        </li>
+                        <li>
+                            <h3>移动端播放</h3>
+                            <p>121</p>
+                        </li>
+                        <li>
+                            <h3>移动端缓存</h3>
+                            <p>89</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="champ-content clearfloat">
+            <div class="champ-img fl">
+                <a href=""><img src="images/mv/cham01.jpg" alt=""></a>
+            </div>
+            <div class="champ-data fr">
+                <div class="week-data">
+                    <div class="week-info">
+                        <h3>高尚 官方版</h3>
+                        <p>--<a href="">薛之谦</a></p>
+                    </div>
+                    <span class="cham-icon"></span>
+                    <ul class="clearfloat">
+                        <li>
+                            <h3>站内完整播放</h3>
+                            <p>99007</p>
+                        </li>
+                        <li>
+                            <h3>站外完整播放</h3>
+                            <p>47290</p>
+                        </li>
+                        <li>
+                            <h3>收藏次数</h3>
+                            <p>7711</p>
+                        </li>
+                        <li>
+                            <h3>下载次数</h3>
+                            <p>1792</p>
+                        </li>
+                        <li>
+                            <h3>百度热度</h3>
+                            <p>5865</p>
+                        </li>
+                        <li>
+                            <h3>移动端分享</h3>
+                            <p>14365</p>
+                        </li>
+                        <li>
+                            <h3>移动端播放</h3>
+                            <p>12124512</p>
+                        </li>
+                        <li>
+                            <h3>移动端缓存</h3>
+                            <p>14575</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<!--周榜冠军结束-->
+
+<!--mv man开始-->
+<div class="mv-man w">
+    <div class="title-box">
+        <h3>音悦人</h3>
+    </div>
+    <div class="mv-list-box">
+        <ul class="clearfloat">
+            <li class="mv-man-li01"><a href=""><img src="images/mv/mv-man01.jpg" alt="">
+                <h5>Waste My Time 官方版</h5>
+                <p>被歌迷称作“孤神”的90后嘻哈唱作人满舒克近日发布了全新MV《Waste My Time》,这也是他首次自导自演MV作品。&lt;br&gt; &lt;br&gt;身兼模特、词曲创作人、嘻哈歌手等多重身份的满舒克是近年来最受关注的年轻华语嘻哈音乐人。从2010年尝试发布首支Mixtape《Young
+                    Jack》开始,满舒克凭借其多元化风格、贴近年轻人生活的歌词,逐渐被歌迷熟知。&lt;br&gt; &lt;br&gt;独立音乐人身份的满舒克2012-2015年连续四年被豆瓣提名年度最佳说唱音乐人,并且三次获得最佳说唱音乐人大奖。2016年,满舒克迈向音乐生涯的一个新的阶段,签约摩登天空旗下嘻哈厂牌MDSK,借助摩登天空的平台和成熟运作模式试图将嘻哈文化向更大众的领域发展。&lt;br&gt;
+                    &lt;br&gt;此次发布的MV作品《Waste My
+                    Time》,不仅是满舒克新专辑中的主打单曲。同时这支自编自导的MV也是满舒克首次向影视领域进行尝试。MV中满舒克很好的把握了当下年轻人的一种生活状态,以及面对孤独的方式。“孤独”也一直是满舒克歌曲中的主要议题。</p>
+            </a></li>
+            <li><a href=""><img src="images/mv/mv-man02.jpg" alt="">
+                <h5>Lost In The Night 官方版</h5>
+                <p>明灭不定的灯火让夜显得更加晦黯,你身处都市的中心,自认为清醒与孤高,但霓虹闪烁光怪陆离间,亦真亦幻。你的自以为是消耗殆尽,于是迷失在这长夜的黑暗里。&lt;br&gt;&lt;br&gt;自命清高,对人对己双重标准的纠结是现今都市流行病。热斑—这支风格独树一帜的新生代乐队—在首张专辑《无感人》中,用《Lost
+                    in the night》对这种病症进行了剖解与诊疗,MV又赋予了这一切视觉冲击力。“奇怪的姿态没有负担
+                    ,冷漠的眼神没有答案”,走进超市的王志文和刘翩翩,各色人群相遇,上演了一部另类版本的《超市夜未眠》。这些面目模糊的人,正是对歌词中揭示的对人性黑暗面习以为常的生动演绎——偷窃,偷窥,滥饮,破坏背后是无节制的对物质的觊觎、对金钱的贪婪、对性的窥测,对暴力的放纵等等不堪。&lt;br&gt;&lt;br&gt;在副歌之后,热斑道出了事实真相“痛苦并不指失去,而是内心麻木不堪”,现代人的自私,冷漠形象跃然眼前,而王志文在货架上发现的遥控器,有着凝固时间的魔力,但并没有使他们获得从混乱中超脱的机会,他们嗤之以鼻的行为,也一样在他们身上复制,狂饮,呕吐,推倒货架.....同一个空间里的人注定看不到真相。&lt;br&gt;&lt;br&gt;“是什么人掌灯,把我照亮”,诗歌中曾经这样写道。被裹挟于物欲横流而随波逐流的人,内心的清明正被吞蚀,即便置身都市也如同迷失在妖夜荒踪般的荒原,沦为无感人。如同MV的尾声,伴随着清冽的吉他,狂欢般的演奏,王志文和刘翩翩驾车甩脱夜晚幻梦般的羁绊,驶向晦明不定的未来</p>
+            </a></li>
+            <li><a href=""><img src="images/mv/mv-man03.jpg" alt="">
+                <h5>我的生命不过是温柔的疯狂</h5>
+                <p>
+                    一个男人踏上清晨的列车,遇见一个陌生的美丽女人,展开一个温柔而疯狂的故事,这可能是一部法国电影,也可能一个男人片刻的恣意幻想,从开篇带入感极强紧张的手风琴intro,密集的鼓点推进叙事脉络,跌宕激昂的小提琴渲染着炙烈的情爱,那个有些轻狂,妄为的男人在爱的梦境中舞蹈旋转,却不小心打碎了灵魂的杯子跌入自由的深渊。作为电影导演的卢庚戌在这首歌里呈现了一个电影式的叙事结构,像一部三分钟的电影精彩镜头剪辑,讲述一个男人秘而不宣的情欲故事。而歌名来源于诗人兰波的一句诗:我的生命不过是温柔的疯狂,眼里一片海,我却不肯蓝。</p>
+            </a></li>
+            <li><a href=""><img src="images/mv/mv-man04.jpg" alt="">
+                <h5>梦停留</h5>
+                <p>好,春来冬去又一春,二十七载人间路,自诩刚开始做些事,总算没辜负。&lt;br&gt;&lt;br&gt;英国天气阴雨连绵,有时莫名其妙飘起雨雾,人们照常喝茶饮酒街边闲谈。太阳好时城堡草地美的不像话,大片森林随山坡地势生长起伏,从南到北一路牛羊闲适炊烟袅袅,行至开阔处误以为回归内蒙草原,直把他乡作故乡。而云层仿佛触手可及,像极了奥丁神话,似有人神共居,时有直升机径直飞过;寒冬时节抵达至今近两月,排除雷区误区得各路好汉相助,一路闯下来竟然闯出了感觉,挣扎真好,异国他乡以另一种身份重生刺激的很,但还是提醒自己不论何时何地,虽保持从头来过的勇气,而世间万路只一条,带着这颗心好好走下去,不必重来。&lt;br&gt;&lt;br&gt;从开始到结束弹指即逝,妙人奇事概不赘述,在所有录音结束后得了妙曲三支,素材一堆,其中有首歌要分享,叫做《梦停留》,北京孕育了动机,一个月后在英国艾塞克斯完成歌词编曲并最终录制,这支是我的歌,写给自己唱与众人听。</p>
+            </a></li>
+            <li><a href=""><img src="images/mv/mv-man05.jpg" alt="">
+                <h5>港岛 荒觉 官方版</h5>
+                <p>《港岛
+                    荒觉》是收录于火星电台新专辑中的一首歌曲,其MV发布。它不是常规的MV,没有起伏的剧情,没有拍摄的实景,这样先锋性、实验性的视觉作品符合了火星电台的一贯调性。这支MV内容的灵感,源于火星电台身边的一位好友,刻画了一个人在找回自己来到这个世上时的样子,一直走,一直不回头。一千个观众眼中就有一千个哈姆雷特,可能从这首MV中你看到的也会是某个熟悉的朋友,或者就是你自己。</p>
+            </a></li>
+        </ul>
+    </div>
+</div>
+<!--mv man结束-->
+</div>
+<!--内容部分结束-->
+<!--尾部开始-->
+<div class="bottom">
+    <p class="link">
+        <a href="">关于音悦台</a><a href="">人才招聘</a><a href="">联系我们</a><a href="">友情链接</a><a href="">版权声明</a><a
+            href="">客服中心</a>
+    </p>
+    <div class="copyright">
+        Copyright © 2009 - 2017 yinyuetai.com 广播电视节目制作经营 许可证编号(京)字第1891号
+        <a href=""> 京网文[2014]2037-287号</a><a href="">网络视听许可证0110413号</a><br>
+        <span class="ghs"></span>
+        <a href="">京公网安备11010502014900号</a>
+        | 京ICP证060716号 |京ICP备11024134号-1 | 出版物经营许可证 新出发京批字第直160022号 | 增值电信业务经营许可证B2-20140501
+        <span class="baoshi"></span>
+    </div>
+</div>
+<!--尾部结束-->
+</body>
+
+</html>
+<script src="js/mv/jquery-3.2.1.js"></script>
+<script src="js/mv/mv.js"></script>
